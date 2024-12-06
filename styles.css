@@ -1,0 +1,192 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #d32f2f;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    background-color: #b71c1c;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+.btn-login {
+    padding: 8px 20px;
+    background-color: white;
+    border: none;
+    color: #d32f2f;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background-color: #f7b1b1;
+}
+
+/* Hero Section */
+header {
+    
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    background-color: #b71c1c;
+}
+
+/* Section Styles */
+section {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+.form input, .form select, .form textarea, .form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+}
+
+.form button:hover {
+    background-color: #b71c1c;
+}
+
+/* Inventory Section */
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.blood-type {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 2px solid #d32f2f;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Analytics */
+.analytics-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Donation Camps Section */
+.camp-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.camp {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.camp button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* FAQ Section */
+.faq-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+@media (forced-colors: active) {
+    body, nav, .hero-btn, .form button {
+        forced-color-adjust: none; /* Prevent automatic forced color adjustments */
+    }
+}

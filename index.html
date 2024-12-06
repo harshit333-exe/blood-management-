@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <h1>BloodCare</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#donor-registration">Donor Registration</a></li>
+            <li><a href="#blood-inventory">Blood Inventory</a></li>
+            <li><a href="#request-blood">Request Blood</a></li>
+            <li><a href="#donation-camps">Donation Camps</a></li>
+            <li><a href="#reports-analytics">Reports & Analytics</a></li>
+            <li><a href="#notifications">Notifications</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-login">
+            <button class="btn-login">Login</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home">
+        <div class="hero-content">
+            <h2>Save Lives by Donating Blood Today</h2>
+            <p>Join our community of life-savers. Become a blood donor or find a nearby blood bank.</p>
+            <button class="hero-btn">Register Now</button>
+        </div>
+    </header>
+
+    <!-- Donor Registration Section -->
+<!-- Donor Registration Section -->
+<section id="donor-registration">
+    <h2>Donor Registration</h2>
+    <p>Fill out the form below to become a registered blood donor.</p>
+    <form id="donorForm" class="form">
+        <input type="text" id="fullName" name="fullName" placeholder="Full Name" autocomplete="name" required>
+        <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
+        <input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="tel" required>
+        <select id="bloodType" name="bloodType" autocomplete="off" required>
+            <option value="">Blood Type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+        </select>
+        <button type="submit">Register</button>
+    </form>
+</section>
+
+
+
+    <!-- Blood Inventory Section -->
+    <section id="blood-inventory">
+        <h2>Blood Inventory</h2>
+        <p>Real-time view of available blood units across our network.</p>
+        <div class="inventory-grid">
+            <div class="blood-type">
+                <h3>A+</h3>
+                <p>120 Units</p>
+            </div>
+            <div class="blood-type">
+                <h3>O+</h3>
+                <p>150 Units</p>
+            </div>
+            <div class="blood-type">
+                <h3>AB-</h3>
+                <p>60 Units</p>
+            </div>
+            <div class="blood-type">
+                <h3>B+</h3>
+                <p>80 Units</p>
+            </div>
+            <!-- More blood types as needed -->
+        </div>
+    </section>
+
+    <!-- Request Blood Section -->
+    <!-- Request Blood Section -->
+     <section id="request-blood">
+        <h2>Request Blood</h2>
+        <p>Healthcare providers can request blood by filling out the form below.</p>
+        <form class="form">
+            <input type="text" id="hospitalName" name="hospitalName" placeholder="Hospital Name" autocomplete="organization" required>
+            <input type="text" id="requiredBloodType" name="requiredBloodType" placeholder="Required Blood Type" autocomplete="off" required>
+            <input type="number" id="unitsRequired" name="unitsRequired" placeholder="Units Required" required>
+            <input type="date" id="requiredDate" name="requiredDate" placeholder="Required Date" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+
+    <!-- Blood Donation Camps Section -->
+    <section id="donation-camps">
+        <h2>Upcoming Blood Donation Camps</h2>
+        <div class="camp-grid">
+            <div class="camp">
+                <h3>City Hospital Blood Drive</h3>
+                <p>Date: 15th September</p>
+                <p>Location: City Hospital</p>
+                <button>Register</button>
+            </div>
+            <div class="camp">
+                <h3>Red Cross Blood Camp</h3>
+                <p>Date: 20th September</p>
+                <p>Location: Red Cross Center</p>
+                <button>Register</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reports & Analytics Section -->
+    <section id="reports-analytics">
+        <h2>Reports & Analytics</h2>
+        <div class="analytics-grid">
+            <div class="chart">
+                <h3>Donations Over Time</h3>
+                <canvas id="donationChart"></canvas>
+            </div>
+            <div class="chart">
+                <h3>Blood Usage</h3>
+                <canvas id="usageChart"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section id="notifications">
+        <h2>Notifications</h2>
+        <p>Stay updated with alerts and reminders for donation events and blood needs.</p>
+        <div class="notification-list">
+            <div class="notification">
+                <p>Urgent Need: O+ Blood required in City Hospital</p>
+                <button>Donate Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard">
+        <h2>Dashboard</h2>
+        <p>View your donation history and upcoming appointments.</p>
+        <div class="dashboard-info">
+            <h3>Next Eligible Donation Date: 20th October</h3>
+            <h3>Last Donation: 15th July</h3>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <h3>Who is eligible to donate blood?</h3>
+            <p>Anyone in good health, aged between 18 and 65, and weighing at least 50 kg.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How often can I donate blood?</h3>
+            <p>You can donate blood every 56 days for whole blood donations.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+     <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+        <form class="form">
+            <input type="text" id="contactName" name="contactName" placeholder="Your Name" autocomplete="name" required>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="Your Email" autocomplete="email" required>
+            <textarea id="contactMessage" name="contactMessage" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BloodCare. All rights reserved. | Security & Compliance | Privacy Policy</p>
+    </footer>
+
+</body>
+</html>
